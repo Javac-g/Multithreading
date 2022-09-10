@@ -29,7 +29,7 @@ Task 3
 
 
 Suppose, we have the next class:
-<img src = "task3.png"
+<img src = "task3.png">
 
 You need to implement the methods of the Interactor class so that output will look like this:
 Serving thread running
