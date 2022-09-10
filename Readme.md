@@ -27,7 +27,7 @@ Using Thread.sleep() method is unwelcomed in this task.
 
 Task 3
 
-
+<pre>
 Suppose, we have the next class:
 <img src = "task3.png">
 
@@ -46,3 +46,4 @@ The counsume(...) method should wait until serve initializes x field and then ch
 Assume that the consume(...) method should be able to execute without the serve(...) method after waiting for 3 seconds.
 
 Use synchronized blocks (or methods), wait() and notify() methods for the implementation.
+</pre>
