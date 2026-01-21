@@ -23,6 +23,9 @@ public class Main{
             return new Report(user, orders);
         }).thenAccept(report -> show(report));
 
+            
+        CompletableFuture.supplyAsync(() -> heavyTask(), myCustomExecutor);
+
         
                             
 
