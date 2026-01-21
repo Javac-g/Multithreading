@@ -15,7 +15,13 @@ public class Main{
         
         System.out.println("Я не заблокирован!"); 
 
-
+        var userFuture = CompletableFuture.supplyAsync(() -> getUser());
+        var ordersFuture = CompletableFuture.supplyAsync(() -> getOrders());
+        
+        // Ждем оба, комбинируем результаты и возвращаем отчет
+        userFuture.thenCombine(ordersFuture, (user, orders) -> {
+            return new Report(user, orders);
+        }).thenAccept(report -> show(report));
 
         
                             
